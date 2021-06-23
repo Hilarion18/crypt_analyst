@@ -40,6 +40,7 @@ try {
       }
     })
     console.log("The maximum profit for Jacky can get is " + maxGap);
+    console.log("Buy at: " + targetMin + ", and sell at :" + targetMax);
   })
   .catch(function (error) {
     console.log(error.message);
@@ -83,7 +84,9 @@ try {
       }
     }
   })
+  targetMin = startProfitIndex ? startProfitIndex : targetMin;
   console.log("The maximum profit for Jacky can get is " + maxGap);
+  console.log("Buy at: " + targetMin + ", and sell at :" + targetMax);
 } catch (e) {
     console.log('Error:', e.stack);
 }
