@@ -11,7 +11,7 @@ function factorialH(h) {
         while (i <= x) {
             if (x%i == 0) {
                 console.log(`${i} `);
-                tempArr = i;
+                tempArr.push(i);
             }
             ++i;
         }
@@ -26,5 +26,6 @@ function factorialH(h) {
     console.log(`so the total is: ${arr.length}`);
 }
 
-// factorialH(128);
-factorialH(262144);
+factorialH(128);
+// factorialH(262144);
+// factorialH(134217728);
